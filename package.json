@@ -1,0 +1,27 @@
+{
+  "name": "punkapi",
+  "version": "1.0.0",
+  "description": "Front end tasks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node server.js\" \"sass --watch src/scss:src/css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aurorekha/punkapi.git"
+  },
+  "author": "Rekha B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aurorekha/punkapi/issues"
+  },
+  "homepage": "https://github.com/aurorekha/punkapi#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

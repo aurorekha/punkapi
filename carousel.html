@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle2.js"></script>
+    <script type="text/javascript" src="http://malsup.github.io/jquery.cycle2.scrollVert.js"></script>
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/css/index.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <ul class="nav">
+        <li><a class="menuLinks" href="/">Home</a></li>
+        <li><a class="menuLinks" href="/accordion">Accordion</a></li>
+        <li><a class="menuLinks" href="/carousel">Carousel</a></li>
+        <li><a class="menuLinks" href="/grid">Grid</a></li>
+      </ul>
+    </header>
+    <div id="root">
+      <h2>Carousel</h2>
+      <div class="container">
+        <div class="row">
+          <div
+          class="cycle-slideshow"
+          data-cycle-fx=carousel
+          data-cycle-timeout=1000
+          data-cycle-carousel-visible=6
+          data-cycle-carousel-fluid=true
+          data-cycle-slides="div">
+          <h2>Carousel 1</h2>
+          <div><img src="https://loremflickr.com/g/320/240/paris"></div>
+          <div><img src="https://loremflickr.com/g/320/240/dog"></div>
+          <div><img src="https://loremflickr.com/g/320/240/brazil,rio"></div>
+          <div><img src="https://loremflickr.com/g/320/240/paris"></div>
+          <div><img src="https://loremflickr.com/g/320/240/dog"></div>
+          <div><img src="https://loremflickr.com/g/320/240/brazil,rio"></div>
+          </div>
+          <div class="cycle-slideshow"
+            data-cycle-fx="scrollVert"
+              >
+              <h2>Carousel 2</h2>
+              <img src="https://loremflickr.com/g/225/240/paris">
+              <img src="https://loremflickr.com/g/225/240/dog">
+              <img src="https://loremflickr.com/g/225/240/brazil,rio">
+              <img src="https://loremflickr.com/g/225/240/paris">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
