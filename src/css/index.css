@@ -27,6 +27,53 @@
   text-align: center;
 }
 
+body {
+  background-size: cover;
+}
+
+.sortButtons {
+  text-align: center;
+}
+
+.ascending {
+  background: #2ecc71;
+  height: 2rem;
+  padding: 10px 15px 24px;
+  border: 1px solid white;
+  color: white;
+  vertical-align: middle;
+}
+
+.descending {
+  background: #f1c40f;
+  height: 2rem;
+  padding: 10px 15px 24px;
+  border: 1px solid white;
+  color: white;
+  vertical-align: middle;
+}
+
+#grid {
+  padding: 2rem;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#grid:after {
+  content: "";
+  display: block;
+  margin-left: 48.38%;
+}
+
+.beerGrid {
+  border: 1px solid white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
 html {
   height: 100%;
 }
@@ -34,6 +81,7 @@ html {
 body {
   font-family: "Fjalla One", sans-serif;
   background: linear-gradient(to bottom, #c0c0aa 0%, #1cefff 100%);
+  background-size: 100% 100% cover;
   color: white;
 }
 

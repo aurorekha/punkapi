@@ -1,0 +1,47 @@
+body {
+  background-size: cover;
+}
+
+// sort buttonStyles
+.sortButtons {
+  text-align: center;
+}
+
+@mixin buttonStyles($background) {
+  background: $background;
+  height: 2rem;
+  padding: 10px 15px 24px;
+  border: 1px solid white;
+  color: white;
+  vertical-align: middle;
+}
+
+.ascending {
+  @include buttonStyles(#2ecc71);
+}
+
+.descending {
+  @include buttonStyles(#f1c40f);
+}
+
+// grid styles
+#grid {
+  padding: 2rem;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  &:after {
+		content:'';
+		display: block;
+		margin-left: 48.38%;
+	}
+}
+
+.beerGrid {
+  border: 1px solid white;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}

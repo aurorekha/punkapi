@@ -45,7 +45,7 @@ window.onload = function() {
           const checkB = parseFloat($(b).text().split(' ').pop());
 
           // Check which button has been clicked and sort accordingly
-          if(myThis.hasClass('sortHigh')){
+          if(myThis.hasClass('ascending')){
             return (checkA > checkB) ? 1 : (checkA < checkB) ? -1 : 0; // ascending sort
             } else {
             return (checkA < checkB) ? 1 :  (checkA > checkB) ? -1 : 0; // descending sort
