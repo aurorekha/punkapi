@@ -1,8 +1,10 @@
+@import 'accordion';
+@import 'grid';
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
 $background: linear-gradient(to bottom, #c0c0aa 0%,#1cefff 100%);
 $backgroundTwo: linear-gradient(to bottom, #f2709c 0%, #ff9472 100%);
-$red: #E55643;
+$orange: #E5571D;
 $green: #2b9f5e;
 $yellow: #f1c83c;
 $shadow: #533d4a;
@@ -104,7 +106,7 @@ h1{
 
 .title{
   &:nth-child(1){
-    color: $red;
+    color: $orange;
   }
   &:nth-child(2){
     color: $green;
@@ -112,35 +114,6 @@ h1{
   &:nth-child(3){
     color: $yellow;
   }
-}
-
-
-#accordion {
-  font-size: 1rem;
-  width: 30vw;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-.beerInfoAccordion{
-  border:1px solid #ccc;
-  border-radius:5px;
-  padding: 1.5em 1.5em;
-  background: #ff6f61;
-  text-transform: uppercase;
-  color: white;
-  cursor: pointer;
-  font-size: .8em;
-  letter-spacing: .1em;
-  transition: all .3s;
-  text-align: center;
-  margin: 0;
-
-}
-.panel{
-  display:none;
-  padding:4px;
-  text-align: center;
 }
 
 h2 {
