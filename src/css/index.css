@@ -1,4 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+#accordion {
+  font-size: 1rem;
+  width: 30vw;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.beerInfoAccordion {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1.5em 1.5em;
+  background: #ff6f61;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  transition: all 0.3s;
+  text-align: center;
+  margin: 0;
+}
+
+.panel {
+  display: none;
+  padding: 4px;
+  text-align: center;
+}
+
 html {
   height: 100%;
 }
@@ -92,41 +120,13 @@ h1 {
 }
 
 .title:nth-child(1) {
-  color: #E55643;
+  color: #E5571D;
 }
 .title:nth-child(2) {
   color: #2b9f5e;
 }
 .title:nth-child(3) {
   color: #f1c83c;
-}
-
-#accordion {
-  font-size: 1rem;
-  width: 30vw;
-  margin: 0 auto;
-  border-radius: 5px;
-}
-
-.beerInfoAccordion {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 1.5em 1.5em;
-  background: #ff6f61;
-  text-transform: uppercase;
-  color: white;
-  cursor: pointer;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
-  transition: all 0.3s;
-  text-align: center;
-  margin: 0;
-}
-
-.panel {
-  display: none;
-  padding: 4px;
-  text-align: center;
 }
 
 h2 {

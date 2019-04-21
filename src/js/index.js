@@ -1,7 +1,6 @@
 window.onload = function() {
   const div = document.getElementById('accordion');
   const url = 'https://api.punkapi.com/v2/beers';
-
   // for creating necessary nodes to the element
   function createElements(element) {
     return document.createElement(element);
@@ -11,10 +10,12 @@ window.onload = function() {
   function appendingChildren(parent, el) {
     return parent.appendChild(el);
   }
+
+  const getData = fetch(url)
+    .then((resp) => resp.json());
+
 // div class panel info
-  fetch(url)
-    .then((resp) => resp.json())
-    .then(function(data) {
+  getData.then(function(data) {
         data.forEach(function(beer) {
           // creating the elements here
           let divTwo = createElements('div'),
