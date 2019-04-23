@@ -1,9 +1,7 @@
-@import 'accordion';
-@import 'grid';
+@import '_accordion';
+@import '_grid';
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 
-$background: linear-gradient(to bottom, #c0c0aa 0%,#1cefff 100%);
-$backgroundTwo: linear-gradient(to bottom, #f2709c 0%, #ff9472 100%);
 $orange: #E5571D;
 $green: #2b9f5e;
 $yellow: #f1c83c;
@@ -15,9 +13,16 @@ html{
 
 body{
   font-family: 'Fjalla One', sans-serif;
-  background: $background;
   background-size: 100% 100% cover;
   color: white;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: -webkit-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: -moz-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: -o-radial-gradient(top, circle cover, #97d0e1, #427388 80%);
+  background-image: radial-gradient(top, circle cover, #97d0e1, #427388 80%);
 }
 
 .header, .nav {

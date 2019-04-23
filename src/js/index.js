@@ -14,7 +14,7 @@ window.onload = function() {
   const getData = fetch(url)
     .then((resp) => resp.json());
 
-// div class panel info
+// fetch the api endpoint to get the required data
   getData.then(function(data) {
         data.forEach(function(beer) {
           // creating the elements here
@@ -35,7 +35,7 @@ window.onload = function() {
            appendingChildren(p, h4);
         });
 
-        // Add delegated listener
+        // on click listener for the accordion
         $('#accordion').on('click', '.beerInfoAccordion', function(){
           const $this = $(this);
           if ( $this.next().is(":visible")){

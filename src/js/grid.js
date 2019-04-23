@@ -11,9 +11,10 @@ window.onload = function() {
   function appendingChildren(parent, el) {
     return parent.appendChild(el);
   }
+
+  // fetch the api endpoint to get the required data
   const getData = fetch(url)
     .then((resp) => resp.json());
-// div class panel info
     getData.then(function(data) {
         data.forEach(function(beer) {
           // creating the elements here
@@ -34,7 +35,7 @@ window.onload = function() {
         });
 
         $('.buttons').click(function(event) {
-      /* Act on the event */
+        // on event do the following
         const myThis = $(this);
         const item = $('#grid');
         const itemSort = $('div', item);
