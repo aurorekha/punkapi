@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently \"node server.js\" \"sass --watch src/scss:src/css\""
+    "start": "concurrently \"node server.js\" \"grunt sass \""
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,18 @@
   "homepage": "https://github.com/aurorekha/punkapi#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
+    "coffeescript": "^2.4.1",
     "express": "^4.16.4",
     "path": "^0.12.7"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0"
+    "concurrently": "^4.1.0",
+    "grunt": "^1.0.4",
+    "grunt-contrib-coffee": "^2.1.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^0.7.3",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
   }
 }
